@@ -1,5 +1,6 @@
 // Copyright 2000-2019 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
 apply plugin: 'java'
+apply plugin: 'pmd'
 
 compileJava {
   sourceCompatibility '1.8'
@@ -22,4 +23,8 @@ jar {
   manifest {
     attributes 'Main-Class': 'org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler'
   }
+}
+
+pmd {
+    ignoreFailures = true
 }

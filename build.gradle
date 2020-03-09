@@ -1,6 +1,7 @@
 // Copyright 2000-2019 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
 apply plugin: 'java'
 apply plugin: 'pmd'
+apply plugin: 'jacoco'
 
 compileJava {
   sourceCompatibility '1.8'

@@ -14,9 +14,14 @@ sourceSets {
 }
 
 repositories { jcenter() }
+
 dependencies {
   testCompile 'junit:junit:4.12'
   testCompile 'org.assertj:assertj-core:3.12.2'
+}
+
+task myJavadocs(type: Javadoc) {
+    source = sourceSets.main.allJava
 }
 
 jar {
